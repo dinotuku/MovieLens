@@ -73,6 +73,7 @@ recommenders
     |_  model.py: build model and create history class.
     |_  test.py: testing codes for MF-DNN models. 
     |_  train.py: experiment runner for MF-DNN models.
+|_  parse_data.ipynb: parse Movielens 100k data for mf-dnn codes
 ```
 
 ## Team
