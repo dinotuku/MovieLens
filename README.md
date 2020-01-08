@@ -5,40 +5,74 @@ NTDS 2019 Project Team 7 - Movie Recommendation
 A movie recommendation is important to our life because of its strength in providing enhanced entertainment. Such a system can suggest a set of movies to users based on their interest, or the popularity of the movies. In this work, we emphasize on building a recommendation system using graph based machine learning. Besides, we also analyze data from Movielens 100k to find out the hidden network structures of movies and users.
 
 ## Requirements
-* `Python 3.6` for mf-dnn and `Python 2.7` for gc-mc
+* `Python 3.6` for Matrix Factorization and `Python 2.7` for Graph Convolutional Matrix Completion
 * `Keras == 2.2.0`
 * `Pandas == 0.24.2`
 * `Numpy == 1.14.0`
 * `Tensorflow == 1.4.0`
 * `h5py == 2.10.0`
 
+## Usage
+Here are the steps to reproduce our results:
+
+#### Matrix Factorization (+ DNN) (MF-DNN)
+
+1. Download the data through this Google Drive [links](https://drive.google.com/open?id=1Ppm-Z4BkKFNamBjZnH3K7cvK7tpBsL1s) and put them in `recommenders/mf-dnn/data` 
+2. Download the trained models through this Google Drive [links](https://drive.google.com/open?id=1cxkr2ni2F-It0mRf5Bc9vkfptLKfc5bE) and put them in `recommenders/mf-dnn/models`
+3. `cd recommenders/mf-dnn`
+4. Run one of the three scripts to get our testing results: 
+   1. `bash mf.sh` - run the testing code with MF model (latent dimension=16, with ratings normalization)
+   2. `bash dnn.sh` - run the testing code with MF + DNN model (latent dimension=64, no ratings normalization, 3 layers with 256 hidden size, dropout=0.5)
+   3. `bash dnn_w_info.sh` - run the testing code with MF + DNN with features model (latent dimension=64, no ratings normalization, 3 layers with 256 hidden size, dropout=0.5)
+5. You can also train the three models from scratch: 
+   1. `python train.py --normal --dim 16` - train the Matrix Factorizaton model
+   2. `python train.py --dim 64 --dnn` - train the Matrix Factorization + DNN model
+   3. `python train.py --dim 64 --dnn_w_info` - train the Matrix Factorization + DNN with features model
+
+#### Graph Convolutional Matrix Completion (GC-MC)
+
+1. The data should be automatically download if you run the training or testing script. But if it was not downloaded, you can download the data through this Google Drive [links](https://drive.google.com/open?id=1zhxvGefe-fEQS8rDyN6LHqS6cRcaJMrp) and put the folder in `gc-mc/data`
+2. Download the trained models through this Google Drive [links](https://drive.google.com/open?id=129mWle-cRLuEVeXFwGKqHGsVTzrdkUiH) and put them in `gc-mc/models`
+3. `cd recommenders/gc-mc`
+4. Run one of the two scripts to get our testing results:
+   1. `bash test_no_features.sh` - run the testing code with the GC-MC model (no additional features)
+   2. `bash test_with_features.sh` - run the testing code with the GC-MC model (with features)
+5. You can also train (and test) the two models from scratch:
+   1. `train_test_no_features.sh` - train and test the GC-MC model (no additional features)
+   2. `train_test_with_features.sh` - train and test the GC-MC model (with features)
+
+
 ## Files Description
 ```
 recommenders
 |_  gc-mc
-    |_  data/: 
-    |_  logs/:
-    |_  models/:
-    |_  data_utils.py: 
-    |_  initializations.py:
-    |_  layers.py: 
-    |_  metrics.py: 
-    |_  model.py: 
-    |_  preprocessing.py: 
-    |_  train_test.sh: 
-    |_  train.py: 
-    |_  utils.py:
+    |_  data/: folder for dataset files.
+    |_  logs/: folder for log files.
+    |_  models/: folder for models.
+    |_  data_utils.py: data utility functions, like downloading datasets from the internet.
+    |_  initializations.py: different initialization methods for layers.
+    |_  layers.py: handles the computations of graph layers.
+    |_  metrics.py: different metrics for model evaluation.
+    |_  model.py: handles model related tasks, like saving and loading models.
+    |_  preprocessing.py: preprocessing helper functions.
+    |_  test_no_features.sh: script to run the testing code with the GC-MC model (no additional features).
+    |_  test_with_features.sh: script to run the testing code with the GC-MC model (with features).
+    |_  test.py: testing codes for GC-MC models.
+    |_  train_test_no_features.sh: script to train and test the GC-MC model (no additional features).
+    |_  train_test_with_features.sh: script to train and test the GC-MC model (with features).
+    |_  train.py: experiment runner for GC-MC models.
+    |_  utils.py: utility function for constructing feed dict for tensorflow model.
 |_  mf-dnn
-    |_  data/: 
-    |_  logs/: 
-    |_  models/: 
-    |_  utils/: 
-    |_  dnn_w_info.sh: 
-    |_  dnn.sh: 
-    |_  mf.sh: 
-    |_  model.py: 
-    |_  test.py: 
-    |_  train.py: 
+    |_  data/: folder for dataset files.
+    |_  logs/: folder for log files.
+    |_  models/: folder for models.
+    |_  utils/: folder for utility functions codes.
+    |_  dnn_w_info.sh: script to run the testing code with MF + DNN with features model.
+    |_  dnn.sh: script to run the testing code with MF + DNN model.
+    |_  mf.sh: script to run the testing code with MF model.
+    |_  model.py: build model and create history class.
+    |_  test.py: testing codes for MF-DNN models. 
+    |_  train.py: experiment runner for MF-DNN models.
 ```
 
 ## Team
