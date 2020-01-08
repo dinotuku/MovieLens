@@ -13,7 +13,7 @@ A movie recommendation is important to our life because of its strength in provi
 * `h5py == 2.10.0`
 
 ## Usage
-Here are the steps to reproduce the results of our recommendation systems:
+We have two recommendation systems. Here are the steps to reproduce their results:
 
 #### Matrix Factorization (+ DNN) (MF-DNN)
 
