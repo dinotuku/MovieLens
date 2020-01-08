@@ -1,0 +1,8 @@
+data/
+img/
+log/
+
+Report.pages
+SampleSubmission.csv
+res.csv
+plot_embed.py
