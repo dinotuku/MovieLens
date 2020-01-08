@@ -13,11 +13,11 @@ import scipy.sparse as sp
 import sys
 import json
 
-from gcmc.preprocessing import create_trainvaltest_split, \
+from preprocessing import create_trainvaltest_split, \
     sparse_to_tuple, preprocess_user_item_features, globally_normalize_bipartite_adjacency, \
     load_data_monti, load_official_trainvaltest_split, normalize_features
-from gcmc.model import RecommenderGAE, RecommenderSideInfoGAE
-from gcmc.utils import construct_feed_dict
+from model import RecommenderGAE, RecommenderSideInfoGAE
+from utils import construct_feed_dict
 
 # Set random seed
 # seed = 123 # use only for unit testing

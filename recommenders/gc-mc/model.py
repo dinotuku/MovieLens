@@ -1,7 +1,7 @@
 from __future__ import print_function
-from gcmc.layers import *
+from layers import *
 
-from gcmc.metrics import softmax_accuracy, expected_rmse, softmax_cross_entropy
+from metrics import softmax_accuracy, expected_rmse, softmax_cross_entropy
 
 
 flags = tf.app.flags
@@ -83,8 +83,9 @@ class Model(object):
     def load(self, sess=None):
         if not sess:
             raise AttributeError("TensorFlow session not provided.")
-        saver = tf.train.Saver(self.vars)
-        save_path = "tmp/%s.ckpt" % self.name
+        # saver = tf.train.Saver(self.vars)
+        saver = tf.train.Saver()
+        save_path = "models/%s.ckpt-1000" % self.name
         saver.restore(sess, save_path)
         print("Model restored from file: %s" % save_path)
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -- coding: utf-8 --
 """
-Matrix Factorization For Movie Ratings Prediction
+Matrix Factorization (with DNN) For Movie Ratings Prediction
 """
 
 import os
