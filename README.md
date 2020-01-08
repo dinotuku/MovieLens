@@ -80,3 +80,11 @@ recommenders
 | :---: |:---:| :---:| :---: |
 | <img src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-1/p320x320/44598597_2395336093814687_5861457721299042304_o.jpg?_nc_cat=108&_nc_ohc=S9RMSb64YhoAQkGyn-scFiV2xMyg6XZIv2dDWvzZXFz29QswtojFaU-Ww&_nc_ht=scontent.ftpe7-3.fna&oh=5f0d1fd5c995b718238bd81a7d123faf&oe=5E9D09A9" width=80> | <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-1/p320x320/79498686_2761353167417628_1246618539746394112_o.jpg?_nc_cat=106&_nc_ohc=x3z4iSKGAwwAQkbehCuNPDegEk_Y0iRYHs2Y4V7_QWQ4RO5kCRNPOC55A&_nc_ht=scontent.ftpe7-1.fna&_nc_tp=1&oh=390d2c783d4cbef5e6bd6fb3b3787d82&oe=5E99A09A" width=80> | <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.0-9/995456_408847005882967_842797001_n.jpg?_nc_cat=100&_nc_ohc=1imVOW7QilEAQkNRtC9TiMAJEkxOELjVATHLoYPgRBD2wOBi5TSGharzw&_nc_ht=scontent.ftpe7-1.fna&oh=72f7972b8339d12c728923f89091f3a9&oe=5EA82A2A" width=80>  | <img src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-1/p320x320/76762604_477483546200564_68076086340091904_n.jpg?_nc_cat=104&_nc_ohc=ljf__qrYM5EAQmYdsWhQP7SU8_SsGGC_qJ7lIcCVV37yfj588biL06gZQ&_nc_ht=scontent.ftpe7-2.fna&_nc_tp=1&oh=b03d1d0c9ce7c95c0c3809d1c05d3255&oe=5EA1FF48" width=80> |
 | <a href="https://github.com/dinotuku" target="_blank">`dinotuku`</a> | <a href="https://github.com/yehchunhung" target="_blank">`yehchunhung`</a> | <a href="https://github.com/hirokihayakawa07" target="_blank">`hirokihayakawa07`</a> | <a href="https://github.com/eternalbetty233" target="_blank">`eternalbetty233`</a> |
+
+## References
+* [Graph Convolutional Matrix Completion (paper)](https://arxiv.org/abs/1706.02263)
+* [Graph Convolutional Matrix Completion (GitHub repository)](https://github.com/riannevdberg/gc-mc)
+* [Matrix Factorization (lecture given by Hung-yi Lee)](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/MF.pdf)
+
+## License
+This project is licensed under the MIT License - see the `LICENSE.md` file for details
