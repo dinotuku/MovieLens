@@ -54,6 +54,7 @@ recommenders
     |_  layers.py: handles the computations of graph layers.
     |_  metrics.py: different metrics for model evaluation.
     |_  model.py: handles model related tasks, like saving and loading models.
+    |_  plot_rmse.py: plots history of training and validation rmse.
     |_  preprocessing.py: preprocessing helper functions.
     |_  test_no_features.sh: script to run the testing code with the GC-MC model (no additional features).
     |_  test_with_features.sh: script to run the testing code with the GC-MC model (with features).
@@ -70,7 +71,8 @@ recommenders
     |_  dnn_w_info.sh: script to run the testing code with MF + DNN with features model.
     |_  dnn.sh: script to run the testing code with MF + DNN model.
     |_  mf.sh: script to run the testing code with MF model.
-    |_  model.py: build model and create history class.
+    |_  model.py: builds model and create history class.
+    |_  plot_loss.py: plots history of training and validation loss.
     |_  test.py: testing codes for MF-DNN models. 
     |_  train.py: experiment runner for MF-DNN models.
 |_  parse_data.ipynb: parse Movielens 100k data for mf-dnn codes
