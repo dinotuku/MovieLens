@@ -8,9 +8,13 @@ A movie recommendation is important to our life because of its strength in provi
 * `Python 3.6` for Matrix Factorization and `Python 2.7` for Graph Convolutional Matrix Completion
 * `Keras == 2.2.0`
 * `Pandas == 0.24.2`
+* `matplotlib == 3.1.2`
+* `seaborn == 0.9.0`
 * `Numpy == 1.14.0`
 * `Tensorflow == 1.4.0`
 * `h5py == 2.10.0`
+* `networkx == 2.4`
+* `wordcloud == 1.6.0`
 
 ## Usage
 We have two recommendation systems. Here are the steps to reproduce their results:
@@ -85,6 +89,8 @@ recommenders
 | <a href="https://github.com/dinotuku" target="_blank">`dinotuku`</a> | <a href="https://github.com/yehchunhung" target="_blank">`yehchunhung`</a> | <a href="https://github.com/hirokihayakawa07" target="_blank">`hirokihayakawa07`</a> | <a href="https://github.com/eternalbetty233" target="_blank">`eternalbetty233`</a> |
 
 ## References
+* [MovieLens 100k (paper)](http://files.grouplens.org/papers/harper-tiis2015.pdf)
+* [MovieLens 100k (dataset)](https://grouplens.org/datasets/movielens/100k/)
 * [Graph Convolutional Matrix Completion (paper)](https://arxiv.org/abs/1706.02263)
 * [Graph Convolutional Matrix Completion (GitHub repository)](https://github.com/riannevdberg/gc-mc)
 * [Matrix Factorization (lecture given by Hung-yi Lee)](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2017/Lecture/MF.pdf)
