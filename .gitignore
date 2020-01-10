@@ -4,5 +4,6 @@ data/
 models/
 
 .python-version
+.DS_Store
 
 *.pyc
