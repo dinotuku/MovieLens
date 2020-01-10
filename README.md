@@ -1,6 +1,6 @@
 NTDS 2019 Project Team 7 - Movie Recommendation
 ===
-[![Movie_Recommendation](https://img.shields.io/badge/Presentation-Slides-orange?labelColor=0f4c81&color=8d0045)](https://large-type.com/#UNDER%20CONSTRUCTION%20%3A)
+[![Movie_Recommendation](https://img.shields.io/badge/Presentation-Slides-orange?labelColor=0f4c81&color=8d0045)](https://large-type.com/#UNDER%20CONSTRUCTION%20%3A\))
 
 A movie recommendation is important to our life because of its strength in providing enhanced entertainment. Such a system can suggest a set of movies to users based on their interest, or the popularity of the movies. In this work, we emphasize on building a recommendation system using graph based machine learning. Besides, we also analyze data from Movielens 100k to find out the hidden network structures of movies and users.
 
