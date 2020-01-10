@@ -16,8 +16,12 @@ A movie recommendation is important to our life because of its strength in provi
 * `networkx == 2.4`
 * `wordcloud == 1.6.0`
 
+## Interactive Graph Visualization
+* [Movie Graph](https://dinotuku.com/ntds-2019-project-team-7/exploration/figure/genres-graph/): colored via modularity shown by Gephi
+* [User Graph](https://dinotuku.com/ntds-2019-project-team-7/exploration/figure/job-graph/): colored via modularity shown by Gephi
+
 ## Usage
-We have two recommendation systems. Here are the steps to reproduce their results:
+We have two recommendation systems (five models). Here are the steps to reproduce their results:
 
 #### Matrix Factorization (+ DNN) (MF-DNN)
 
